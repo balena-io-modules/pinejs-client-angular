@@ -6,7 +6,7 @@
 		# Node. Does not work with strict CommonJS, but
 		# only CommonJS-like enviroments that support module.exports,
 		# like Node.
-		factory(require('angular'), require('./core'))
+		factory(require('angular'), require('pinejs-client-core'))
 	else
 		# Browser globals
 		factory(root.angular, root.PinejsClientCore)

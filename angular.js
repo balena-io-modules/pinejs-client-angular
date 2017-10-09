@@ -7,7 +7,7 @@
     if (typeof define === 'function' && define.amd) {
       return define(['angular', './core'], factory);
     } else if (typeof exports === 'object') {
-      return factory(require('angular'), require('./core'));
+      return factory(require('angular'), require('pinejs-client-core'));
     } else {
       return factory(root.angular, root.PinejsClientCore);
     }
